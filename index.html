@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Rahul's Portfolio Website" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rahul Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header role="navigation">
+      <h1>Rahul</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am a developer passionate about web development and AI projects.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <!-- Filter Buttons -->
+      <div class="filters">
+        <button onclick="filterProjects('all')">All</button>
+        <button onclick="filterProjects('ai')">AI</button>
+      </div>
+
+      <article>
+        <h3>Sign Language Translator</h3>
+        <figure>
+          <img src="project1.jpg" alt="Sign language detection system" />
+          <figcaption>AI-based gesture recognition system</figcaption>
+        </figure>
+      </article>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input id="name" type="text" required />
+
+        <label for="email">Email:</label>
+        <input id="email" type="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message"></textarea>
+        <header>
+          <nav>
+            <button onclick="toggleMenu()">☰</button>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <section id="about">
+                <h2>About Me</h2>
+                <p>
+                  This is a paragraph describing who I am, my background,
+                  interests, and what I do. You can add more details here to
+                  make it personal and engaging.
+                </p>
+              </section>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+            <section id="projects">
+              <h2>Projects</h2>
+              <article>
+                <h3>Project Title</h3>
+                <figure>
+                  <img
+                    src="project-image.jpg"
+                    alt="Description of the project image"
+                  />
+                  <figcaption>Caption describing the project</figcaption>
+                </figure>
+                <p>
+                  Description of the project, its features, technologies used,
+                  and outcomes.
+                </p>
+              </article>
+              <!-- Add more articles for additional projects -->
+            </section>
+          </nav>
+        </header>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>© 2026 Rahul</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
